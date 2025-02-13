@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,158 @@
     <script defer src="./main.js"></script>
     <title>Glass Haven</title>
 </head>
+
 <body>
+    <header class="header">
+        <div class="header__content">
+            <a href="" class="logo" title="Glass Haven">Glass Haven</a>
+            <div>
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label class="burger" for="burger-checkbox"></label>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="list__item"><a href="#hero" title="The 'Home' section">Home</a></li>
+                    <li class="list__item"><a href="#advantages" title="The 'Advantages' section">Advantages</a>
+                    </li>
+                    <li class="list__item"><a href="#newsletter" title="The 'Newsletter' section">Newsletter</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero__content-wrapper">
+                <div class="hero__content">
+                    <h1 class="h1">Glass Haven</h1>
+                    <p class="subtitle">The rise of glass architecture</p>
+                    <ul class="hero__list">
+                        <li class="hero__item text">up to &dollar;10&nbsp;000 for an&nbsp;elite&nbsp;building</li>
+                        <li class="hero__item text">30&percnt; on the first building</li>
+                        <li class="hero__item text">the maximum mortgage rate&nbsp;is&nbsp;17&percnt;</li>
+                    </ul>
+                    <button aria-label="Order glass house" type="button" class="button">Order</button>
+                </div>
+            </div>
+            <img class="hero__img" src="./images/glass-house-hero.jpg" loading="lazy" width="760" height="1010"
+                alt="The largest glass building with an area of 400 square meters, produced by Glass Haven">
+        </section>
+
+        <section id="advantages" class="advantages">
+            <img class="advantages__img" src="./images/glass-house-left.jpg" loading="lazy" width="600" height="1024"
+                alt="The tallest glass building with a height of 300 meters, produced by Glass Haven">
+            <div class="advantages__content">
+                <ul class="advantages__list">
+                    <li class="advantages__list-item">Maximum natural light</li>
+                    <li class="advantages__list-item">Aesthetic appeal and modern design</li>
+                    <li class="advantages__list-item">Panoramic views and communication with the outside world</li>
+                    <li class="advantages__list-item">Potential energy efficiency</li>
+                </ul>
+                <button aria-label="Order glass house" type="button" class="button">Order</button>
+            </div>
+            <img class="advantages__img" src="./images/glass-house-right.jpg" loading="lazy" width="600" height="1024"
+                alt="the second tallest glass building with a height of 275 meters, produced by Glass Haven">
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <div class="newsletter__content-wrapper">
+                <div class="newsletter__content">
+                    <h2 class="title">Subscribe<br>to the newsletter</h2>
+                    <form class="newsletter__form">
+                        <div class="newsletter__input-wrapper">
+                            <input name="Name" class="newsletter__input" type="text" autocomplete="on"
+                                placeholder="Name" id="Name" required>
+                            <input name="E-mail" class="newsletter__input" type="email" autocomplete="on"
+                                placeholder="E-mail" id="E-mail" required>
+                        </div>
+                        <div class="newsletter__checkbox-wrapper">
+                            <input name="Privacy-policy" class="newsletter__checkbox" type="checkbox"
+                                id="Privacy-policy" required>
+                            <label class="newsletter__label-checkbox" for="Privacy-policy">
+                                I accept Privacy policy
+                            </label>
+                        </div>
+                        <button aria-label="Subscribe to the newsletter" type="submit"
+                            class="newsletter__button button">Submit Form</button>
+                    </form>
+                </div>
+                <div class="newsletter__img">
+                    <img class="newsletter__background" src="./images/glass-house-autumn.jpg" loading="lazy"
+                        width="1024" height="1024"
+                        alt="the second largest glass building with an area of 327 square meters, produced by Glass Haven">
+                </div>
+            </div>
+            <img class="newsletter__woman" src="./images/woman.png" loading="lazy" width="450" height="700" alt="">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="navigation footer__navigation">
+            <ul class="navigation__list">
+                <li class="list__item"><a href="#hero" title="The 'Home' section">Home</a></li>
+                <li class="list__item"><a href="#advantages" title="The 'Advantages' section">Advantages</a></li>
+                <li class="list__item"><a href="#newsletter" title="The 'Newsletter' section">Newsletter</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__content-wrapper">
+            <div class="footer__content">
+                <a href="" class="footer__logo logo" title="Glass Haven">Glass Haven</a>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" title="Instagram">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer" title="TikTok">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#tiktok"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://linkedin.com/" target="_blank" rel="noreferrer" title="LinkedIn">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" title="Facebook">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://web.telegram.org/" target="_blank" rel="noreferrer" title="Telegram">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" title="YouTube">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <button aria-label="Order glass house" type="button" class="button">Order</button>
+            </div>
+            <div class="footer__rights">
+                <p>&copy; 2024, Copyright</p>
+                <a href="#!" title="Privacy policy">Privacy policy</a>
+                <a href="#!" title="Terms of use">Terms of use</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
